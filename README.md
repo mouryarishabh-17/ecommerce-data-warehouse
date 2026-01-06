@@ -25,7 +25,9 @@ The project is designed to reflect **real-world data engineering practices** inc
 ---
 
 ## 🏗️ Project Structure
-''' ecommerce-data-warehouse/
+
+```
+ecommerce-data-warehouse/
 │
 ├── data/
 │ ├── raw/ # Generated raw data (ignored in Git)
@@ -49,21 +51,25 @@ The project is designed to reflect **real-world data engineering practices** inc
 │ └── powerbi.pbix
 │
 ├── .gitignore
-└── README.md '''
+└── README.md 
+```
 
 ---
 
 ## 🔄 ETL Pipeline Flow
-Raw Data
-↓
-Extraction
-↓
-Transformation
-↓
-Data Quality Checks
-↓
-Analytics-Ready Fact Table
-
+```
+                                                             Raw Data
+                                                                ↓
+                                                            Extraction
+                                                                ↓
+                                                           Transformation
+                                                                ↓
+                                                         Data Quality Checks
+                                                                ↓
+                                                      Analytics-Ready Fact Table
+                                                                ↓
+                                                              Dashboard
+```
 
 ---
 
@@ -77,10 +83,9 @@ Analytics-Ready Fact Table
 ### 2️⃣ Transformation
 - Joins customers and orders
 - Calculates order totals using:
-
-
+```
 product.price × quantity
-
+```
 - Enriches records with derived attributes
 
 ### 3️⃣ Data Quality
@@ -123,7 +128,7 @@ SQL analytics include:
 All SQL queries are stored in:
 
 
-analytics/queries.sql
+`analytics/queries.sql`
 
 
 ---
@@ -147,7 +152,7 @@ Basic logging is implemented to track pipeline execution:
 Logs are written to:
 
 
-etl/etl_pipeline.log
+`etl/etl_pipeline.log`
 
 
 ---
