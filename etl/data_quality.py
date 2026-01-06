@@ -11,14 +11,11 @@ with open(file_path, "r", newline="", encoding="utf-8") as f:
     for row in reader:
         total_rows += 1
 
-        # Check if any value is empty
         if "" in row.values():
             missing_count += 1
 
 print("Total customer records:", total_rows)
 print("Records with missing values:", missing_count)
-
-# ---- Duplicate Customer ID Check ----
 
 customer_ids = set()
 duplicate_count = 0
@@ -35,8 +32,6 @@ with open(file_path, "r", newline="", encoding="utf-8") as f:
             customer_ids.add(customer_id)
 
 print("Duplicate customer_id records:", duplicate_count)
-
-# ---- Foreign Key Check: Orders -> Customers ----
 
 customer_ids = set()
 
@@ -58,8 +53,6 @@ with open("data/processed/orders_enriched.csv", "r", newline="", encoding="utf-8
 print("Total orders:", total_orders)
 print("Orders with invalid customer_id:", invalid_orders)
 
-# ---- Sample invalid customer_ids (diagnostic) ----
-
 sample_invalid = set()
 
 with open("data/processed/orders_enriched.csv", "r", newline="", encoding="utf-8") as f:
@@ -71,8 +64,6 @@ with open("data/processed/orders_enriched.csv", "r", newline="", encoding="utf-8
             break
 
 print("Sample invalid customer_ids:", sample_invalid)
-
-# ---- FIX: Drop orders with invalid customer_id ----
 
 valid_customer_ids = set()
 
@@ -101,8 +92,6 @@ with open(output_path, "w", newline="", encoding="utf-8") as f:
 print("Clean orders written to:", output_path)
 print("Clean order count:", len(clean_orders))
 
-# ---- FK Re-check on CLEAN orders ----
-
 invalid_clean_orders = 0
 total_clean_orders = 0
 
@@ -115,8 +104,6 @@ with open("data/processed/orders_enriched_clean.csv", "r", newline="", encoding=
 
 print("Clean orders total:", total_clean_orders)
 print("Invalid clean orders (should be 0):", invalid_clean_orders)
-
-# ---- Fact Orders Sanity Checks (Corrected Schema) ----
 
 invalid_amount = 0
 total_fact_rows = 0
@@ -133,6 +120,3 @@ with open("data/processed/fact_orders.csv", "r", newline="", encoding="utf-8") a
 
 print("Total fact_orders rows:", total_fact_rows)
 print("Rows with invalid total_amount (<=0):", invalid_amount)
-
-
-
