@@ -30,9 +30,9 @@ The project is designed to reflect **real-world data engineering practices** inc
 ecommerce-data-warehouse/
 │
 ├── data/
-│ ├── raw/ # Generated raw data (ignored in Git)
-│ ├── processed/ # Processed data outputs (ignored in Git)
-│ └── sample/ # Small sample CSVs for schema demonstration
+│ ├── raw/        # Generated raw data (ignored in Git)
+│ ├── processed/  # Processed data outputs (ignored in Git)
+│ └── sample/     # Small sample CSVs for schema demonstration
 │
 ├── etl/
 │ ├── read_customers.py
