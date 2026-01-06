@@ -2,9 +2,9 @@
 
 ## 📌 Project Overview
 This project demonstrates an **end-to-end batch ETL pipeline** for an e-commerce business.  
-It ingests raw data, applies transformations and data quality checks, and loads analytics-ready data into a PostgreSQL data warehouse for reporting and visualization.
+It ingests raw data, applies transformations and data quality checks, and loads analytics-ready data into a PostgreSQL data warehouse for reporting and visualisation.
 
-The project is designed to reflect **real-world data engineering practices** including:
+The project is designed to reflect **real-world data engineering practices,** including:
 - Reproducible ETL pipelines
 - Data quality enforcement
 - Warehouse modeling
@@ -58,17 +58,19 @@ ecommerce-data-warehouse/
 
 ## 🔄 ETL Pipeline Flow
 ```
-                                                             Raw Data
-                                                                ↓
-                                                            Extraction
-                                                                ↓
-                                                           Transformation
-                                                                ↓
-                                                         Data Quality Checks
-                                                                ↓
-                                                      Analytics-Ready Fact Table
-                                                                ↓
-                                                              Dashboard
+             Raw Data
+                ↓
+            Extraction
+                ↓
+          Transformation
+                ↓
+       Data Quality Checks
+                ↓
+   Load to PostgreSQL Warehouse
+                ↓
+     Analytics Ready Fact Table
+                ↓
+            Dashboard                                                            
 ```
 
 ---
@@ -134,7 +136,7 @@ All SQL queries are stored in:
 ---
 
 ## 📈 Dashboard
-Business metrics are visualized using a BI tool Power BI connected directly to PostgreSQL.
+Business metrics are visualised using a Power BI connected directly to PostgreSQL.
 
 Dashboards include:
 - Revenue trends
@@ -192,3 +194,5 @@ Logs are written to:
 - GitHub best practices for data projects
 
 ---
+
+
