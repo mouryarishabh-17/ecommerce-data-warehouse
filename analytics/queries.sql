@@ -1,6 +1,4 @@
--- ===============================
--- PROJECT 1: E-Commerce Analytics
--- ===============================
+E-Commerce Analytics
 
 -- KPI 1: Total Revenue
 
