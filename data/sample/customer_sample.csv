@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,signup_date,country,customer_region
+101,Amit,Sharma,amit.sharma@gmail.com,2023-01-12,INDIA,APAC
+102,Neha,Verma,neha.verma@gmail.com,2023-02-18,INDIA,APAC
+103,Rahul,Mehta,rahul.mehta@gmail.com,2023-03-05,INDIA,APAC
+104,John,Smith,john.smith@gmail.com,2023-01-22,USA,NORTH_AMERICA
+105,Emily,Brown,emily.brown@gmail.com,2023-04-10,USA,NORTH_AMERICA
+106,Arjun,Patel,arjun.patel@gmail.com,2023-05-01,INDIA,APAC
+107,Priya,Singh,priya.singh@gmail.com,2023-06-14,INDIA,APAC
+108,Michael,Johnson,michael.j@gmail.com,2023-02-28,USA,NORTH_AMERICA
+109,Sneha,Iyer,sneha.iyer@gmail.com,2023-03-19,INDIA,APAC
+110,David,Wilson,david.w@gmail.com,2023-04-25,USA,NORTH_AMERICA

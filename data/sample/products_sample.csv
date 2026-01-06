@@ -1,0 +1,11 @@
+product_id,product_name,category,price
+1,Laptop,Electronics,65000
+2,Smartphone,Electronics,42000
+3,Headphones,Accessories,8500
+4,Keyboard,Accessories,4500
+5,Mouse,Accessories,3200
+6,Monitor,Electronics,18000
+7,Tablet,Electronics,30000
+8,Smartwatch,Gadgets,12000
+9,Camera,Electronics,72000
+10,Speaker,Gadgets,9500
