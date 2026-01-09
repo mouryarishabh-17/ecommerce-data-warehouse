@@ -2,14 +2,13 @@
 
 ## 📌 Project Overview
 This project demonstrates an **end-to-end batch ETL pipeline** for an e-commerce business.  
-It ingests raw data, applies transformations and data quality checks, and loads analytics-ready data into a PostgreSQL data warehouse for reporting and visualisation.
+It ingests raw data, applies transformations and data quality checks, and loads analytics-ready data into a PostgreSQL data warehouse for reporting
 
 The project is designed to reflect **real-world data engineering practices,** including:
 - Reproducible ETL pipelines
 - Data quality enforcement
 - Warehouse modeling
-- SQL analytics
-- BI visualization 
+- SQL analytics 
 - Clean GitHub repository structure
 
 ---
@@ -19,7 +18,6 @@ The project is designed to reflect **real-world data engineering practices,** in
 - Enforce data quality and referential integrity
 - Design an analytics-ready data warehouse
 - Perform business analytics using SQL
-- Enable BI dashboards Power BI 
 - Maintain professional logging and documentation
 
 ---
@@ -47,8 +45,6 @@ ecommerce-data-warehouse/
 ├── analytics/
 │ └── queries.sql
 │
-├── dashboard/
-│ └── powerbi.pbix
 │
 ├── .gitignore
 └── README.md 
@@ -68,9 +64,7 @@ ecommerce-data-warehouse/
                 ↓
    Load to PostgreSQL Warehouse
                 ↓
-     Analytics Ready Fact Table
-                ↓
-            Dashboard                                                            
+     Analytics Ready Fact Table                                                          
 ```
 
 ---
@@ -135,16 +129,6 @@ All SQL queries are stored in:
 
 ---
 
-## 📈 Dashboard
-Business metrics are visualised using a Power BI connected directly to PostgreSQL.
-
-Dashboards include:
-- Revenue trends
-- Customer distribution
-- Order performance metrics
-
----
-
 ## 🪵 Logging
 Basic logging is implemented to track pipeline execution:
 - Pipeline start
@@ -190,7 +174,6 @@ Logs are written to:
 - Importance of data quality checks
 - Warehouse schema modeling
 - SQL-based analytics
-- BI integration
 - GitHub best practices for data projects
 
 ---
